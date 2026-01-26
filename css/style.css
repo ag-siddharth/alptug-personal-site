@@ -99,9 +99,10 @@ body {
 /* --- SMALL BUTTON MODIFIER --- */
 .btn-sm {
     /* REMOVED width and height! */
-    padding: 0.5rem 1rem; /* Controls the space around the text */
-    font-size: 0.85rem; 
-    margin-top: 0; 
+    padding: 0.5rem 1rem;
+    /* Controls the space around the text */
+    font-size: 0.85rem;
+    margin-top: 0;
 }
 
 /* Button Hover Animation (Grows slightly) */

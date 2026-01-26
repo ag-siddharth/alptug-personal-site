@@ -1,4 +1,4 @@
-﻿# Project 1: Alptug's Digital Ecosystem - Design Document
+﻿# Project 1: Alptug's Personal Homepage - Design Document
 
 **Author:** Alptug Guven
 **Course:** CS 5610 Web Development

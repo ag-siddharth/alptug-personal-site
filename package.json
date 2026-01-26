@@ -1,1 +1,16 @@
-"type": "module""license": "MIT"
+{
+    "name": "alptug-personal-site",
+    "version": "1.0.0",
+    "type": "module",
+    "description": "Project 1 for CS5610",
+    "scripts": {
+        "lint": "eslint ."
+    },
+    "author": "Alptug Guven",
+    "license": "MIT",
+    "devDependencies": {
+        "eslint": "^8.56.0",
+        "eslint-config-airbnb-base": "^15.0.0",
+        "eslint-plugin-import": "^2.29.1"
+    }
+}
