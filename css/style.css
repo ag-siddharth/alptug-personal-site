@@ -1,0 +1,267 @@
+/* --- 1. VAN GOGH COLOR VARIABLES --- */
+:root {
+    --bg-midnight: #0b132b;
+    /* Deep night sky */
+    --text-star: #e2e8f0;
+    /* Starry white/gray */
+    --accent-sunflower: #facc15;
+    /* Yellow brushstrokes */
+    --accent-swirl: #3b82f6;
+    /* Swirling blue */
+    --card-bg: #1c2541;
+    /* Slightly lighter blue for contrast */
+}
+
+/* --- 2. BASE RESET --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-midnight);
+    color: var(--text-star);
+    font-family: 'Georgia', serif;
+    /* Philosophical/History/Old-timey vibe */
+    line-height: 1.6;
+}
+
+/* --- 3. LAYOUT: CSS GRID (Rubric: 5 pts) --- */
+.content-grid {
+    display: grid;
+    /* On desktop, split into 2 equal columns. On mobile, stack them. */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 4rem 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    /* Centers the content */
+    align-items: center;
+}
+
+/* --- 4. HEADER & NAV: FLEXBOX (Rubric: 5 pts) --- */
+.main-header {
+    background-color: var(--card-bg);
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid var(--accent-swirl);
+}
+
+.main-header h1 {
+    color: var(--accent-sunflower);
+    font-style: italic;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: var(--text-star);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    /* Smooth hover effect */
+}
+
+/* --- 5. INTERACTIVE ANIMATION (Mouse Hover idea) --- */
+.nav-links a:hover {
+    color: var(--accent-sunflower);
+}
+
+/* --- 6. BUTTON STYLING  --- */
+.primary-btn {
+    display: inline-block;
+    background-color: var(--accent-sunflower);
+    color: var(--bg-midnight);
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 1rem;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+/* --- BUTTON CONTAINER --- */
+.button-group {
+    display: block;
+    gap: 1rem;
+    /* Adds space between the buttons */
+    margin-top: 1.5rem;
+    /* Pushes the group away from the text above */
+}
+
+/* --- SMALL BUTTON MODIFIER --- */
+.btn-sm {
+    /* REMOVED width and height! */
+    padding: 0.5rem 1rem; /* Controls the space around the text */
+    font-size: 0.85rem; 
+    margin-top: 0; 
+}
+
+/* Button Hover Animation (Grows slightly) */
+.primary-btn:hover {
+    transform: scale(1.05);
+    background-color: var(--text-star);
+}
+
+/* --- 7. IMAGE STYLING --- */
+.profile-pic {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 10px;
+    border: 4px solid var(--accent-sunflower);
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
+    /* Blue glow effect */
+}
+
+/* --- 8. QUIZ PAGE SPECIFIC STYLES --- */
+.quiz-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* Single column for the quiz */
+    padding: 4rem 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.quiz-form-container {
+    margin-top: 2rem;
+    background: var(--card-bg);
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: left;
+    /* Aligns questions to the left */
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.result-text {
+    margin-top: 2rem;
+    color: var(--accent-sunflower);
+}
+
+/* --- 9. MEDIA HUB (AI PAGE) SPECIFIC STYLES --- */
+
+.media-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+/* Media Page Main Container */
+.media-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+}
+
+/* Spacing between the Movie and TV sections */
+.media-section {
+    margin-bottom: 4rem;
+}
+
+/* Specific styling for the H3 Section Headers */
+.media-section-header {
+    border-bottom: 2px solid var(--accent-swirl);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.media-card {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    aspect-ratio: 2/3;
+    /* Standard movie poster ratio */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+/* Makes the section headers span across the entire grid */
+.grid-header {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-top: 2rem;
+    color: var(--accent-sunflower);
+    border-bottom: 2px solid var(--accent-swirl);
+    padding-bottom: 0.5rem;
+}
+
+.media-card:hover {
+    transform: translateY(-5px);
+}
+
+.media-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.media-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(11, 19, 43, 0.9);
+    /* Dark overlay */
+    color: var(--text-star);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    text-align: center;
+    opacity: 0;
+    /* Hidden by default */
+    transition: opacity 0.3s ease;
+}
+
+/* Show overlay on hover OR when the 'locked' class is applied */
+.media-card:hover .media-overlay,
+.media-card.locked .media-overlay {
+    opacity: 1;
+}
+
+.media-title {
+    color: var(--accent-sunflower);
+    font-family: 'Georgia', serif;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.media-review {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    font-style: italic;
+}
+
+/* --- 10. FOOTER --- */
+.site-footer {
+    text-align: center;
+    padding: 2rem;
+    margin-top: 3rem;
+    background-color: var(--card-bg);
+    font-size: 0.9rem;
+}
+
+.social-links a {
+    color: var(--accent-swirl);
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
