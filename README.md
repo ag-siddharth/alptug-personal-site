@@ -3,7 +3,7 @@
 **Author:** Alptug Guven  
 **Course:** CS 5610: Web Development (Online) - Spring 2026  
 **License:** MIT License
-**Live Website:** (https://alptugguven24-ctrl.github.io/cs5610-project1-homepage/)
+**Live Website:** (https://alptugguven24-ctrl.github.io/alptug-personal-site/)
 
 ## 🎯 Project Objective
 The objective of this project is to build a responsive, interactive personal homepage using vanilla HTML5, CSS3, and ES6+ JavaScript. The site demonstrates semantic web architecture, an original CSS Grid layout, and component separation without the use of libraries like Bootstrap or jQuery. 
