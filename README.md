@@ -15,7 +15,7 @@
 
 ## 🔗 Quick Links
 * **🚀 Live Website:** [CLICK HERE TO VISIT](https://alptugguven24-ctrl.github.io/alptug-personal-site/)
-* **🎥 Video Demonstration:** [INSERT VIDEO LINK HERE]
+* **🎥 Video Demonstration:** [[VIDEO LINK](https://youtu.be/7eyJTRhtIQc)]
 * **📄 Design Document:** [View PDF/Markdown](./DESIGN.md)
 
 ---
