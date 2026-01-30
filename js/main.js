@@ -1,4 +1,7 @@
 // js/main.js
+// Peer review (CS 5610):
+// I really like how you structured this quiz using ES6 modules and kept the logic modular.
+// It makes the code easier to maintain and understand.
 import calculateUp2Score from './utils.js';
 
 document.addEventListener('DOMContentLoaded', () => {
