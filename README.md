@@ -123,3 +123,8 @@ In accordance with course policy, the use of Generative AI is disclosed below:
 
 ---
 *© 2026 Alptug Guven. Built for CS 5610.*
+
+---
+### 📝 Peer Review Note (CS 5610)
+
+This fork was created for a CS 5610 peer review. I really like the Van Gogh color palette, the Media Hub grid, and the Up2 quiz logic. They make the site feel both personal and technically solid.
